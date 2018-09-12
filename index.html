@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Balance_Sheet</title>
+    
+   
+    <script>
+        
+    function validation()
+        {   
+            var username = document.form.name.value;
+            var password = document.form.pssd.value;
+            if( username=='Tiemsky' &&  password=='Jesuisfranck05083119c')
+                {
+                    alert("Login successful");
+                    alert("Welcome Mr Tiemsky Please");
+                     window.open("choice.html");
+                  
+                }
+            else
+                {
+                    alert("Username/Password invalid");
+               
+       
+                }
+         
+        }
+    </script>
+
+</head>
+<body>
+   <div class="contenair" >
+       <div class="content">
+           <h2 id="text"> Login</h2>
+           <form name="form" method="post" >
+               <label>User Name</label>
+               <br>
+               <input id="name" type="text" name="Name" placeholder="Enter User Name" required>
+               <br>
+                <label>Password</label>
+               <br>
+               <input id="pssd" type="password" name="pssd" placeholder="Enter User Password" required>
+               <br>
+               <input id="submit" type="submit" value="Login" name="submit" onclick="validation()" >
+               
+           </form>
+       </div>
+       
+   </div>
+    
+</body>
+</html>
